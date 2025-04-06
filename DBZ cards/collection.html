@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-links">
+                <ul class="menu">
+                    <li><a href="accueil.html">Accueil</a></li>
+                    <li><a href="collection.html">Collection</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                </ul>
+            </div>
+            <div class="logo">
+                <img src="images/IMG_1877-removebg-preview.png" alt="Logo du site">
+            </div>
+            <div class="darkmodecustom">
+                <div class="dark-mode">
+                    <button class="darkmode-btn" onclick="toggleDarkMode()">Dark Mode</button>
+                </div>
+            </div>
+            <div id="content">
+                <button id="logout-button">Se déconnecter</button>
+            </div>
+            <div class="hamburger">
+                <img src="image/menu-btn.webp" alt="">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="cartes">
+            <input type="text" id="barre-recherche" value="" placeholder="Recherche" data-search="">
+            <ul id="filtres">
+                <li data-filter="all" class="active">All</li>
+                <li data-filter="Z Fighter">Z Fighter</li>
+                <li data-filter="Army of Frieza">Army of Frieza</li>
+                <li data-filter="Freelancer">Freelancer</li>
+                <li data-filter="Other">Other</li>
+                <li data-filter="Villain">Villain</li>
+                <li data-filter="Pride Troopers">Pride Troopers</li>
+            </ul>
+            <div class="filtres-container">
+                <div id="characters-collection"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="">Contactez nous</a></li>
+            <li><a href="">Nos réseaux</a></li>
+            <li><a href="">FAQ</a></li>
+        </ul>
+    </footer>
+    
+    <script src="apicollection.js"></script>
+    <script src="recherche.js"></script>
+</body>
+</html>
